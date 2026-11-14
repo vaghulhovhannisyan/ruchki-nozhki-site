@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f3ef">
+<meta name="description" content="Ручки Ножки — маникюр, педикюр и окрашивания в Москве. Онлайн-запись.">
+<title>Ручки Ножки — студия красоты в Москве</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf7f3;--paper:#fffdfa;--ink:#282321;--muted:#817773;--rose:#c88e91;--rose-dark:#925f65;--line:#e9dfd8;--blush:#f1e4df}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,calc(100% - 48px));margin:auto}
+.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#faf7f3ed;position:sticky;top:0;z-index:20;backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:39px;height:39px;border:1px solid var(--rose);border-radius:50%;display:grid;place-items:center;color:var(--rose-dark);font-family:"Playfair Display",serif;font-size:17px}.brand-name{font-size:15px;letter-spacing:.13em;font-weight:700}.brand-sub{display:block;font-size:9px;letter-spacing:.22em;color:var(--muted);margin-top:3px;font-weight:500}
+.nav{display:flex;align-items:center;gap:28px;font-size:13px;color:#625954}.nav a:hover{color:var(--rose-dark)}
+.button{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;background:var(--ink);color:white;border-radius:3px;font-size:12px;font-weight:700;letter-spacing:.06em;transition:.2s}.button:hover{background:var(--rose-dark);transform:translateY(-1px)}.button.light{background:transparent;color:var(--ink);border:1px solid #bdaaa1}
+.hero{padding:62px 0 76px}.hero-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:72px;align-items:center}.eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--rose-dark);font-weight:700}.hero h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(48px,6.5vw,82px);line-height:1.02;font-weight:500;letter-spacing:-.035em;margin:20px 0 22px}.hero h1 em{color:var(--rose-dark);font-weight:500}.hero-copy{max-width:420px;color:var(--muted);font-size:15px;line-height:1.85}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.address{font-size:11px;color:var(--muted);margin-top:23px;letter-spacing:.04em}
+.hero-image{height:540px;position:relative}.hero-image:before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid #d9b9b4;z-index:0}.hero-image img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block}
+.intro{background:var(--paper);padding:68px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.intro-inner{display:grid;grid-template-columns:1fr 2fr;gap:50px;align-items:start}.small-label{font-size:10px;text-transform:uppercase;letter-spacing:.22em;color:var(--rose-dark);font-weight:700}.intro h2,.section-title{font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:clamp(34px,4vw,48px);line-height:1.1;margin:12px 0}.intro p{font-size:14px;line-height:1.9;color:var(--muted);max-width:650px;margin:0}
+.section{padding:86px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:34px}.section-head p{max-width:390px;color:var(--muted);font-size:13px;line-height:1.8;margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.service{padding:27px 26px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:190px;background:transparent;transition:background .2s}.service:hover{background:var(--paper)}.service .index{font-size:10px;color:var(--rose-dark);letter-spacing:.15em}.service h3{font-family:"Playfair Display",Georgia,serif;font-size:24px;font-weight:500;margin:19px 0 9px}.service p{font-size:12px;color:var(--muted);line-height:1.75;margin:0}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.gallery figure{margin:0;overflow:hidden;background:var(--blush)}.gallery img{width:100%;height:360px;display:block;object-fit:cover;transition:transform .5s}.gallery figure:first-child img{height:360px}.gallery figure:hover img{transform:scale(1.035)}.gallery figcaption{padding:13px 14px;font-size:11px;color:var(--muted);letter-spacing:.06em;background:var(--paper)}
+.prices{background:var(--blush)}.price-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:start}.price-intro p{color:var(--muted);font-size:13px;line-height:1.8}.price-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}.price-card{background:var(--paper);padding:22px 23px}.price-card h3{font-family:"Playfair Display",Georgia,serif;font-size:21px;font-weight:500;margin:0 0 14px}.price-line{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:12px;color:#625954}.price-line:last-child{border:0}.price-line b{color:var(--ink);white-space:nowrap;font-weight:600}.price-note{font-size:10px;color:var(--muted);line-height:1.6;margin-top:16px}
+.booking{background:#292321;color:#fffaf7;padding:76px 0}.booking-grid{display:grid;grid-template-columns:1fr .8fr;gap:50px;align-items:center}.booking h2{font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:clamp(40px,5vw,60px);line-height:1.08;margin:15px 0}.booking-copy{font-size:13px;line-height:1.9;color:#c9bfba;max-width:470px}.booking-box{border:1px solid #655651;padding:30px}.booking-box h3{font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:26px;margin:0 0 10px}.booking-box p{font-size:12px;line-height:1.8;color:#c9bfba;margin-bottom:22px}.booking-box .button{width:100%;background:#d6a4a3;color:#282321}.contacts{display:flex;gap:22px;flex-wrap:wrap;margin-top:26px;font-size:12px;color:#e5dcd7}.contacts a{text-decoration:underline;text-underline-offset:3px}
+footer{padding:23px 0;background:#201b19;color:#a99d97;font-size:10px;letter-spacing:.04em}.footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:800px){.nav{gap:15px}.nav a:not(.button){display:none}.hero-grid,.intro-inner,.price-layout,.booking-grid{grid-template-columns:1fr;gap:35px}.hero{padding:42px 0 58px}.hero-image{height:430px;max-width:600px}.section{padding:65px 0}.services{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.gallery figure:first-child{grid-column:auto}.gallery img,.gallery figure:first-child img{height:330px}.price-layout{gap:25px}}
+@media(max-width:520px){.container{width:calc(100% - 32px)}.topbar{height:68px}.brand-name{font-size:13px}.brand-mark{width:34px;height:34px}.topbar>.container{width:calc(100% - 28px)}.topbar .button{padding:11px 14px;font-size:10px}.hero h1{font-size:53px}.hero-image{height:330px}.hero-image:before{inset:10px -9px -10px 9px}.hero-buttons .button{width:100%}.intro{padding:50px 0}.services{grid-template-columns:1fr}.service{min-height:0;padding:22px}.gallery{gap:9px}.gallery figure:first-child{grid-column:auto}.gallery img,.gallery figure:first-child img{height:230px}.price-cards{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:14px}.section-title{font-size:38px}.booking{padding:60px 0}.booking-box{padding:22px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="container" style="display:flex;align-items:center;justify-content:space-between;width:min(1120px,calc(100% - 48px));margin:auto">
+<a class="brand" href="#top"><span class="brand-mark">РН</span><span><span class="brand-name">РУЧКИ НОЖКИ</span><span class="brand-sub">МАНИКЮР · ПЕДИКЮР</span></span></a>
+<nav class="nav"><a href="#services">Услуги</a><a href="#works">Портфолио</a><a href="#prices">Цены</a><a href="#contacts">Контакты</a></nav>
+<a class="button" href="https://n107609.yclients.com/" target="_blank" rel="noopener">ОНЛАЙН-ЗАПИСЬ</a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="container hero-grid"><div>
+<div class="eyebrow">Студия красоты · Москва</div>
+<h1>Красота<br>в простых<br><em>деталях.</em></h1>
+<p class="hero-copy">Маникюр, педикюр и окрашивания с вниманием к каждой детали. Выберите услугу и найдите удобное время для себя.</p>
+<div class="hero-buttons"><a class="button" href="https://n107609.yclients.com/" target="_blank" rel="noopener">ЗАПИСАТЬСЯ</a><a class="button light" href="#services">НАШИ УСЛУГИ</a></div>
+<div class="address">МОСКВА · СУЩЁВСКИЙ ВАЛ, 55</div>
+</div><div class="hero-image"><img src="assets/hero-manicure.jpg" alt="Нежный маникюр с дизайном"></div></div></section>
+<section class="intro"><div class="container intro-inner"><div><div class="small-label">РУЧКИ НОЖКИ</div><h2>Время<br>позаботиться о себе</h2></div><p>Создаём аккуратный образ, в котором приятно быть каждый день. От естественного нюда до выразительного дизайна, от ухода за стопами до сложных техник окрашивания — выберите то, что подходит именно вам.</p></div></section>
+<section class="section" id="services"><div class="container"><div class="section-head"><div><div class="small-label">ЧТО МЫ ДЕЛАЕМ</div><h2 class="section-title">Услуги студии</h2></div><p>Основные направления и процедуры. Подробности и свободное время доступны в онлайн-записи.</p></div>
+<div class="services">
+<article class="service"><div class="index">01 / МАНИКЮР</div><h3>Маникюр с покрытием</h3><p>Снятие, обработка, покрытие Luxio, Bandi или I do Beauty. Выравнивание в 4 руки без доплат.</p></article>
+<article class="service"><div class="index">02 / МАНИКЮР</div><h3>Маникюр без снятия</h3><p>Обработка и покрытие Luxio, I do Beauty, лаком или без покрытия.</p></article>
+<article class="service"><div class="index">03 / ПЕДИКЮР</div><h3>Педикюр</h3><p>Уход и обработка с покрытием Luxio, I do Beauty, лаком или без покрытия.</p></article>
+<article class="service"><div class="index">04 / ПЕДИКЮР</div><h3>SMART-педикюр</h3><p>Аппаратный уход за стопами с выбранным вариантом покрытия.</p></article>
+<article class="service"><div class="index">05 / ВОЛОСЫ</div><h3>Сложные окрашивания</h3><p>Мелирование, Airtouch, шатуш, балаяж и омбре. Подбор техники на консультации.</p></article>
+<article class="service"><div class="index">06 / ДОПОЛНИТЕЛЬНО</div><h3>Снятие и выравнивание</h3><p>Дополнительные этапы ухода в рамках выбранной процедуры. Уточняйте при записи.</p></article>
+</div></div></section>
+<section class="section" id="works" style="padding-top:0"><div class="container"><div class="section-head"><div><div class="small-label">ПОРТФОЛИО</div><h2 class="section-title">Работы и настроение</h2></div><p>Небольшая подборка фотографий — только крупные планы и детали.</p></div>
+<div class="gallery">
+<figure><img src="assets/hero-manicure.jpg" alt="Зелёный маникюр с золотой линией"><figcaption>Маникюр · глубокий зелёный</figcaption></figure>
+<figure><img src="assets/gallery-pedicure.jpg" alt="Педикюр с жёлтым покрытием"><figcaption>Педикюр · солнечный оттенок</figcaption></figure>
+<figure><img src="assets/gallery-burgundy.jpg" alt="Маникюр в бордовом оттенке"><figcaption>Маникюр · бордовый глянец</figcaption></figure>
+<figure><img src="assets/gallery-lilac.jpg" alt="Маникюр в нежном сиреневом оттенке"><figcaption>Маникюр · нежная лаванда</figcaption></figure>
+<figure><img src="assets/gallery-hair.jpg" alt="Длинные светлые волосы после сложного окрашивания"><figcaption>Сложное окрашивание</figcaption></figure>
+</div></div></section>
+<section class="section prices" id="prices"><div class="container price-layout"><div class="price-intro"><div class="small-label">ПРАЙС-ЛИСТ</div><h2 class="section-title">Цены на услуги</h2><p>Стоимость перенесена с предоставленного прайса. Выберите услугу, чтобы посмотреть доступные варианты и записаться.</p><a class="button" href="https://n107609.yclients.com/" target="_blank" rel="noopener">ВСЕ УСЛУГИ И ЗАПИСЬ</a></div>
+<div><div class="price-cards">
+<div class="price-card"><h3>Маникюр · всё включено</h3><div class="price-line"><span>Luxio, Bandi</span><b>2 590 ₽</b></div><div class="price-line"><span>I do Beauty, камуфляж</span><b>2 690 ₽</b></div></div>
+<div class="price-card"><h3>Маникюр · без снятия</h3><div class="price-line"><span>Luxio</span><b>2 290 ₽</b></div><div class="price-line"><span>I do Beauty</span><b>2 390 ₽</b></div><div class="price-line"><span>Лак</span><b>1 490 ₽</b></div><div class="price-line"><span>Без покрытия</span><b>1 000 ₽</b></div></div>
+<div class="price-card"><h3>Педикюр · без снятия</h3><div class="price-line"><span>Luxio</span><b>3 090 ₽</b></div><div class="price-line"><span>I do Beauty</span><b>3 190 ₽</b></div><div class="price-line"><span>Лак</span><b>2 390 ₽</b></div><div class="price-line"><span>Без покрытия</span><b>1 790 ₽</b></div></div>
+<div class="price-card"><h3>SMART-педикюр</h3><div class="price-line"><span>Luxio</span><b>3 600 ₽</b></div><div class="price-line"><span>I do Beauty</span><b>3 700 ₽</b></div><div class="price-line"><span>Лак</span><b>2 700 ₽</b></div><div class="price-line"><span>Без покрытия</span><b>уточнить</b></div></div>
+</div><p class="price-note">Стоимость сложных окрашиваний рассчитывается после консультации. Цены необходимо подтвердить у студии перед публикацией.</p></div></div></section>
+<section class="booking" id="contacts"><div class="container booking-grid"><div><div class="small-label" style="color:#d6a4a3">БУДЕМ РАДЫ ВАС ВИДЕТЬ</div><h2>Ваше время<br>для себя.</h2><p class="booking-copy">Запишитесь онлайн, выберите услугу и удобное время. Расписание и подтверждение записи открываются в системе YCLIENTS.</p><div class="contacts"><span>Москва, Сущёвский Вал, 55</span><a href="tel:+79778589096">+7 977 858-90-96</a><a href="https://vk.com/ruchkinozhku" target="_blank" rel="noopener">ВКонтакте</a></div></div>
+<div class="booking-box"><h3>Онлайн-запись</h3><p>Посмотрите свободные окна и выберите подходящее время в расписании студии.</p><a class="button" href="https://n107609.yclients.com/" target="_blank" rel="noopener">ПЕРЕЙТИ К ЗАПИСИ ↗</a></div></div></section>
+</main>
+<footer><div class="container footer"><span>© РУЧКИ НОЖКИ · МОСКВА</span><span>Демонстрационная версия сайта · неофициальный макет</span></div></footer>
+</body></html>
